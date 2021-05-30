@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Викторина</title>
+    <link rel="shortcut icon" href="./source/img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./style/styles.css">
+    </head>
+
+    <body>
+        <main>
+            <section class="timer">
+                <div>
+                </div>
+                <div>
+                </div>
+                <div class="timer-show">
+                    <div class="timer-show-value">
+                        30
+                    </div> 
+                </div>
+            </section>
+
+            <section class="active-block section-input-name">
+                <div class="section-input-name-form">
+                        <h2>Добро пожаловать!</h2>
+                        <p>Пройдите викторину на знание интересных фактов о развитии рок-музыки</p>
+                        <div>Введите свое имя:</div>
+                        <div><input type="text" class="input-name" placeholder="Элвис Пресли"></div>
+                        <div><input type="submit" class="btn-input-name" value="Начнем!"></div>
+                </div>
+            </section>
+
+            <section class="section-quiz">
+                <div class="quiz" id="quiz">
+                    <div class="quiz-questions" id="questions"></div>
+                    <div class="quiz-indicator" id="indicator"></div>
+                    <div class="quiz-results" id="results">
+                        <div class="quiz-results-item">
+                        </div>
+                    </div>
+                    <div class="quiz-controls">
+                        <button class="btn-next" id="btn-next" disabled>Далее</button>
+                        <button class="btn-restart" id="btn-restart">Рестарт</button>
+                        <button class="btn-result" id="btn-result">Результаты</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-popUp">
+                <div class="popUp">
+                    <h2>Время на ответ истекло!</h2>
+                    <button class="btn-result-popUp">Далее</button>
+                </div>
+            </section>
+
+            <section class="section-result">
+                <div class="section-result-text">
+                    <h2 class="section-result-text-timeoff">Поздравляем, <span class="section-result-name"></span>!</h2>
+                    <div>Ваш результат <span class="section-result-points"></span> баллов!</div>
+                    <button id="btn-close">Еще раз!</button>
+                </div>
+            </section>
+        </main>
+
+    <footer>
+    </footer>
+        
+    <script src="js/custom.js"></script>
+    </body>
+
+</html>
